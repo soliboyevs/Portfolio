@@ -1,0 +1,123 @@
+@import url(./main.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --blue: #755CDE;
+    --yellow: #F6A560;
+    --light-red: #F39E9E;
+    --red: #EB7565;
+    --light-blue: #61C4B7;
+    --purple: #552049;
+    --black: #030303;
+    --gray: #7A746E;
+    --white: #FFF7F0;
+}
+.btn{
+    display: block;
+    width: 228px;
+    height: 56px;
+    background-color: var(--black);
+    text-align: center;
+    font-family: "Jakarta";
+    font-weight: 500;
+    color: var(--white);
+    padding-top: 17px;
+    border-radius: 28px;
+}
+.header{
+    width: 100%;
+    height: auto;
+}
+.container{
+    display: flex;
+    width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+.box-1{
+    width: 345px;
+    height: 354px;
+    background-color: var(--blue);
+    border-radius: 8px;
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+    grid-column: span 2;
+    grid-row: span 2;
+} 
+.sm{
+    width: 164px;
+    height: 182px;
+    border-radius: 8px;
+}
+.med{
+    width: 354px;
+    height: 158px;
+    border-radius: 8px;
+}
+.box-2{
+    background-color: var(--yellow);
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.box-3{
+    background-color: var(--light-red);
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.box-4{
+    background-color: var(--red);
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.box-5{
+    background-color: var(--blue);
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.box-6{
+    background-color: var(--purple);
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.box-1-text{
+    padding-top: 100px;
+}
+.box-1-img{
+    position: absolute;
+}
+.main-box{
+    width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 100px;
+}
+.main-headline{
+    text-align: center;
+    font-family: "Jakarta";
+    font-weight: 700;
+    font-size: 56px;
+}
+.main-text{
+    text-align: center;
+    width: 736px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "Jakarta";
+    color: var(--gray);
+}
+.main{
+    padding-top: 50px;
+}
