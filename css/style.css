@@ -36,88 +36,154 @@ a{
 }
 .container{
     display: flex;
-    width: 1440px;
+    width: 1500px;
     margin: auto;
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 20px;
 }
-.box-1{
-    width: 345px;
-    height: 354px;
-    background-color: var(--blue);
-    border-radius: 8px;
-    color: var(--white);
-    text-align: center;
-    align-items: center;
-    grid-column: span 2;
-    grid-row: span 2;
-} 
-.sm{
-    width: 164px;
-    height: 182px;
-    border-radius: 8px;
-}
-.med{
-    width: 354px;
-    height: 158px;
-    border-radius: 8px;
-}
-.box-2{
-    background-color: var(--yellow);
-    grid-column: span 1;
-    grid-row: span 1;
-}
-.box-3{
-    background-color: var(--light-red);
-    grid-column: span 1;
-    grid-row: span 1;
-}
-.box-4{
-    background-color: var(--red);
-    grid-column: span 2;
-    grid-row: span 1;
-}
-.box-5{
-    background-color: var(--blue);
-    grid-column: span 2;
-    grid-row: span 1;
-}
-.box-6{
-    background-color: var(--purple);
-    grid-column: span 2;
-    grid-row: span 1;
-}
-.box-1-text{
-    padding-top: 100px;
-}
-.box-1-img{
-    position: absolute;
-}
-.main-box{
-    width: 1440px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding-top: 100px;
-}
-.main-headline{
-    text-align: center;
-    font-family: "Jakarta";
-    font-weight: 700;
-    font-size: 56px;
-}
-.main-text{
-    text-align: center;
-    width: 736px;
-    margin: auto;
-    font-size: 18px;
-    line-height: 28px;
-    font-family: "Jakarta";
-    color: var(--gray);
-}
 .main{
-    padding-top: 50px;
+    font-family: "Jakarta";
+
 }
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      "graphic-design ui-ux apps"
+      "graphic-design photography photography"
+      "illustrations illustrations motion-graphics";
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 1500px;
+    margin: auto;
+    height: 500px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .graphic-design {
+    grid-area: graphic-design;
+    background-color: #6a5acd;
+  }
+  
+  .ui-ux {
+    grid-area: ui-ux;
+    background-color: #f4a261;
+  }
+  
+  .apps {
+    grid-area: apps;
+    background-color: #e76f51;
+  }
+  
+  .photography {
+    grid-area: photography;
+    background-color: #2a9d8f;
+  }
+  
+  .illustrations {
+    grid-area: illustrations;
+    background-color: #e63946;
+  }
+  
+  .motion-graphics {
+    grid-area: motion-graphics;
+    background-color: #6d597a;
+  }
+
+  .main-headline{
+    width: 752px;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    height: 150px;
+  }
+  .main-head{
+    font-size: 48px;
+    text-align: center;
+  }
+  .main-text{
+    width: 600px;
+    text-align: center;
+    text-align: justify;
+   padding-left: 100px;
+  }
+  .portfolio-img{
+    width: 500px;
+    height: 500px;
+    background-color: var(--blue);
+    border-radius: 50%;
+  }
+  .box-portfolio{
+
+    width: 100px;
+    height: 100px;
+    background-color: var(--blue);
+  }
+  .site-hero{
+    display: flex;
+    width: 1500px;
+    margin: auto;
+    padding-top: 50px;
+    font-family: "Jakarta";
+  }
+  .about{
+    padding-left: 20px;
+    padding-top: 100px;
+  }
+  .about-head{
+    text-align: center;
+    font-size: 36px;
+    width: 500px;
+    padding-bottom: 20px;
+  }
+  .about-text{
+    width: 500px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .portfolia-btn{
+    background-color: var(--red);
+  }
+  .my-work{
+    width: 1500px;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .scrl{
+    padding-top: 50px;
+    padding-left: 600px;
+  }
+  .call{
+    width: 1000px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: var(--black);
+    margin: auto;
+    color: white;
+    display: flex;
+    font-family: "Jakarta";
+  }
+  .call-btn{
+    background-color: var(--red);
+    margin-top: 110px;
+    margin-left: 100px;
+  }
+  .call-text{
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+  .call-txt{
+    width: 450px;
+  }
